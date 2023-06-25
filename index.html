@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNote - Anotador de Recordatorios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logoMyNoteDef.png" alt="MyNote">
+        </div>
+        <div class="icono-info">
+            <img src="img/infoDefinitivo.png" alt="Información" width="60px" height="60px">
+        </div>
+    </nav>
+
+
+    <div id="popup-container" class="popup-container">
+        <div class="popup-body">
+            <h2>My Note, tu libreta digital</h2>
+               <img src="img/fotoDePerfil.jpeg" alt="Foto de Perfil" >
+            <ul>
+                <li>Alumno:  Gonzalo Rilova Salazar</li>
+                <li>Comisión:  DMM3EV</li>
+                <li>Materia:  Diseño y Programación Web I</li>
+                <li>Docente:  Omar Toyos</li>
+                <li>Año:  2023</li>
+            </ul>
+            <button id="cerrar-popup">Cerrar</button>
+        </div>
+    </div>
+   
+    <div class="container">
+        <h1 >Bienvenido!</h1>
+        <h2>Anotá y registrá lo que vos quieras!</h2>
+
+        <button id="anota-btn">ANOTAR</button>
+
+        <div id="recordatorios-container"></div>
+    </div>
+
+    <div id="formulario-modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">x</span>
+            <h2>Agregar Recordatorio</h2>
+            <form id="formulario">
+                <div class="formulario-grupo">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+                <div class="formulario-grupo"></div>
+                <label for="recordatorio">Recordatorio:</label>
+                <textarea id="recordatorio" rows="4" cols="10" required></textarea>
+                <button type="submit">Guardar</button>
+        </div>
+
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <img id="borrar-todo-btn" src="img/eliminarTodo.png" alt="Eliminar Todo" width="50px" height="50px">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
